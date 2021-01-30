@@ -10,7 +10,7 @@ module.exports = {
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Samelogic Docs',
+      title: 'Samelogic Docs Preview Test',
       logo: {
         alt: 'Samelogic Logo',
         src: 'img/logo.svg',
