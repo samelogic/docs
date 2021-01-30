@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Samelogic Docs',
   tagline: '',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://docs.samelogic.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
