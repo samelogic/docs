@@ -67,7 +67,7 @@ module.exports = {
           items: [
             {
               label: 'Blog',
-              to: 'blog',
+              to: 'httsp://samelogic.com/blog',
             },
             {
               label: 'GitHub',
