@@ -1,13 +1,13 @@
 module.exports = {
   title: 'Samelogic Docs',
   tagline: '',
-  url: 'https://docs.samelogic.com',
-  baseUrl: '/',
+  url: 'https://samelogic.com/docs',
+  baseUrl: '/docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Samelogic Inc.', // Usually your GitHub org/user name.
+  projectName: 'Samelogic Docs', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Samelogic Docs',
@@ -22,9 +22,8 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/samelogic',
           label: 'GitHub',
           position: 'right',
         },
@@ -68,7 +67,7 @@ module.exports = {
           items: [
             {
               label: 'Blog',
-              to: 'blog',
+              to: 'httsp://samelogic.com/blog',
             },
             {
               label: 'GitHub',
