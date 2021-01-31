@@ -2,7 +2,7 @@ module.exports = {
   title: 'Samelogic Docs',
   tagline: '',
   url: 'https://samelogic.com/docs',
-  baseUrl: '/docs',
+  baseUrl: '/docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
