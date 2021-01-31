@@ -6,8 +6,8 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Samelogic Inc.', // Usually your GitHub org/user name.
+  projectName: 'Samelogic Docs', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Samelogic Docs',
@@ -22,9 +22,8 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/samelogic',
           label: 'GitHub',
           position: 'right',
         },
