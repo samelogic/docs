@@ -7,7 +7,7 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'Samelogic Inc.', // Usually your GitHub org/user name.
-  projectName: 'Samelogic Docs', // Usually your repo name.
+  projectName: 'Samelogic', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Samelogic Docs',
