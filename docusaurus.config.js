@@ -10,14 +10,14 @@ module.exports = {
   projectName: 'Samelogic', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Samelogic Docs',
+      title: '',
       logo: {
         alt: 'Samelogic Logo',
         src: 'img/logo.svg',
       },
       items: [
         {
-          to: 'docs/',
+          to: '/docs/',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
@@ -85,15 +85,11 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          path: "./docs",
+          routeBasePath: "/",
           // Please change this to your repo.
           editUrl:
             'https://github.com/facebook/docusaurus/edit/master/website/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
