@@ -17,13 +17,7 @@ module.exports = {
       },
       items: [
         {
-          to: '/docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
-        },
-        {
-          href: 'https://github.com/samelogic',
+          href: 'https://github.com/samelogic/docs',
           label: 'GitHub',
           position: 'right',
         },
