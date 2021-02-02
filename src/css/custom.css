@@ -22,6 +22,13 @@
   /* --ifm-link-hover-color: #7F2CCA; */
 }
 
+.footer--dark {
+  --ifm-footer-background-color: rgb(25, 25, 27);
+  --ifm-footer-color: var(--ifm-footer-link-color);
+  --ifm-footer-link-color: var(--ifm-color-secondary);
+  --ifm-footer-title-color: var(--ifm-color-white);
+}
+
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
   display: block;
