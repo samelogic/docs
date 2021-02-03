@@ -10,20 +10,14 @@ module.exports = {
   projectName: 'Samelogic', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Samelogic Docs',
+      title: '',
       logo: {
         alt: 'Samelogic Logo',
         src: 'img/logo.svg',
       },
       items: [
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
-        },
-        {
-          href: 'https://github.com/samelogic',
+          href: 'https://github.com/samelogic/docs',
           label: 'GitHub',
           position: 'right',
         },
@@ -33,45 +27,50 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'About',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
+              label: 'Our Mission',
+              to: 'https://samelogic.com/#',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: 'Our Story',
+              to: 'https://samelogic.com/#',
+            },
+            {
+              label: 'Team Members',
+              to: 'https://samelogic.com/#',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Learn',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Tutorials',
+              href: 'https://samelogic.com/#',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'How it works',
+              href: 'https://samelogic.com/#',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Stories',
           items: [
             {
               label: 'Blog',
-              to: 'httsp://samelogic.com/blog',
+              to: 'https://samelogic.com/#',
             },
+          ],
+        },
+        {
+          title: 'Hire',
+          items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Career',
+              to: 'https://samelogic.com/',
             },
           ],
         },
@@ -85,15 +84,11 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          path: "./docs",
+          routeBasePath: "/",
           // Please change this to your repo.
           editUrl:
             'https://github.com/facebook/docusaurus/edit/master/website/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
