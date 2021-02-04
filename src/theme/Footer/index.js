@@ -58,7 +58,9 @@ function Footer() {
   })}>
       <div className="container">
         <div className="row">
-          <div className="col col--2"></div>
+          <div className="col col--2">
+            <img src="/static/img/samelogic.svg" alt="Samelogic Logo" />
+          </div>
           <div className="col col--10">
         {links && links.length > 0 && <div className="row footer__links">
             {links.map((linkItem, i) => <div key={i} className="col footer__col">
@@ -80,14 +82,20 @@ function Footer() {
                     <FooterLogo alt={logo.alt} url={logoUrl} />
                   </a> : <FooterLogo alt={logo.alt} url={logoUrl} />}
               </div>}
-            {copyright ? <div className="footer__copyright" // Developer provided the HTML, so assume it's safe.
-        // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={{
-          __html: copyright
-        }} /> : null}
+            
           </div>}
 
           </div>
+          </div>
+
+          <div className="row">
+            <div className="col col--12" style={{textAlign:'center'}}>
+            {copyright ? <div className="footer__copyright" // Developer provided the HTML, so assume it's safe.
+              // eslint-disable-next-line react/no-danger
+              dangerouslySetInnerHTML={{
+                __html: copyright
+              }} /> : null}
+            </div>
           </div>
       </div>
     </footer>;
