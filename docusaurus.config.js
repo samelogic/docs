@@ -5,7 +5,7 @@ module.exports = {
   baseUrl: '/docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
   organizationName: 'Samelogic Inc.', // Usually your GitHub org/user name.
   projectName: 'Samelogic', // Usually your repo name.
   themeConfig: {
@@ -75,7 +75,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Samelogic, Inc.`,
     },
   },
   presets: [
