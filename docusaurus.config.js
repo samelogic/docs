@@ -2,7 +2,7 @@ module.exports = {
   title: 'Samelogic Docs',
   tagline: '',
   url: 'https://samelogic.com/docs',
-  baseUrl: process.env.CI ? '/' : '/docs/',
+  baseUrl: process.env.DOCS_ENV && process.env.DOCS_ENV == "preview" ? '/' : '/docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.png',
