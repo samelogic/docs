@@ -59,7 +59,7 @@ function Footer() {
       <div className="container">
         <div className="row">
           <div className="col col--2">
-            <img src="/img/samelogic.svg" alt="Samelogic Logo" />
+            <img src={ useBaseUrl("img/samelogic.svg") } alt="Samelogic Logo" />
           </div>
           <div className="col col--10">
         {links && links.length > 0 && <div className="row footer__links">
