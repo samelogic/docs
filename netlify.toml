@@ -1,0 +1,5 @@
+[context.deploy-preview]
+environment= { DOCS_ENV="preview" }
+
+[context.production]
+environment= { DOCS_ENV="production" }
