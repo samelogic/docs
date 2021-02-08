@@ -1,6 +1,7 @@
 module.exports = {
   someSidebar: {
-    Docusaurus: ['doc1', 'doc2', 'doc3'],
-    Features: ['mdx'],
+    Overview: ['overview/why-samelogic'],
+    Editor: ['micro-survey/product/getting-started'],
+    Library: ['micro-survey/library/getting-started']
   },
 };
