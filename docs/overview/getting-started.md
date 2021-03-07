@@ -1,6 +1,6 @@
 ---
 id: getting-started
-title: Getting Started
+title: Welcome to the Samelogic Way of Experimentation
 slug: /
 ---
 
