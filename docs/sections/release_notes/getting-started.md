@@ -8,6 +8,21 @@ slug: /release-notes
 ## Overview
 At Samelogic we're building a platform for agile and contextual experiments using microsurveys. We want you to be as close to your users as you can possibly be as scale so that the correct things are built. We're always releasing new features and polishing existing functionality based on your feedback. Would you like to suggest a new feature or some improvements? Please reach out to us [here](https://www.samelogic.com/team).
 
+
+---
+### *v0.017*
+*December 11, 2020*
+
+### Improved Onboarding and UI Improvements
+Thanks for your feedback! We've made a few things clearer with the onboarding process, and we've cleaned up a few things in the UI.
+
+*What's New?*
+- Better onboarding experience with the addition of images to better illustrate points.
+- Improved layout for the microsurvey configuration panels.
+- The addition of the 'Timed' painted door button to understand usage around this feature.
+
+> Would you like to suggest a new feature or some improvements? Please reach out to us [here](https://www.samelogic.com/team)!
+
 ---
 
 ### *v0.016*
@@ -32,7 +47,7 @@ Thanks for your feedback! We've made a few things clearer and easier to understa
 Thanks for your feedback! We've improved the onboarding process to the Microsurvey Creator and a few UI and integration fixes.
 
 *What's New?*
-- Better onboarding experience with the of informational modals.
+- Better onboarding experience.
 - Zapier integration fixes.
 - Inline preview fixes.
 
