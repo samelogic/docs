@@ -17,8 +17,23 @@ module.exports = {
       },
       items: [
         {
-          href: 'https://github.com/samelogic/docs',
-          label: 'GitHub',
+          href: '#',
+          label: 'Tutorials',
+          position: 'left',
+        },
+        {
+          href: '#',
+          label: 'How To Guides',
+          position: 'left',
+        },
+        {
+          href: '/docs/release-notes',
+          label: 'Release Notes',
+          position: 'left',
+        },
+        {
+          href: 'https://www.samelogic.com',
+          label: 'Samelogic.com',
           position: 'right',
         },
       ],

@@ -6,12 +6,62 @@ slug: /release-notes
 ---
 
 ## Overview
-At Samelogic we're building a platform for agile and contextual experiments using microsurveys. We want you to be as close to your users as you can possibly be as scale so that the correct things are built. We're always releasing new features and polishing existing functionality based on your feedback. Would you like to suggest a new feature or some improvements? Please reach out to us [here](https://www.samelogic.com/team).
+At Samelogic we're building a platform for agile and contextual experiments using microsurveys. We want you to be as close to your users as you can possibly be that the correct things are built. We're always releasing new features and polishing existing functionality based on your feedback. Would you like to suggest a new feature or some improvements? Please reach out to us [here](https://www.samelogic.com/team).
 
+---
+### *v0.021*
+*January 19, 2021*
+
+### Improved Code Generation and Stability Improvements
+Thanks for your feedback! We've pushed some changes to .
+
+*What's New?*
+- Microsurvey in previewer now reflects questions in real time.
+
+> Would you like to suggest a new feature or some improvements? Please reach out to us [here](https://www.samelogic.com/team)!
+
+---
+### *v0.020*
+*January 13, 2021*
+
+### Improved Previewer
+Thanks for your feedback! We've updated the previewer to reflect the questions from the create section.
+
+*What's New?*
+- Microsurvey in previewer now reflects questions in real time.
+
+> Would you like to suggest a new feature or some improvements? Please reach out to us [here](https://www.samelogic.com/team)!
+
+---
+### *v0.019*
+*January 6, 2021*
+
+### Improved Performance and Stability 
+Happy New Year and thanks for your feedback! We've pushed a few performance and stability improvements to enable faster microsurvey creation and loading times.
+
+*What's New?*
+- Microsurvey states.
+- Callback position-based question changes.
+- Previewer loads microsurvey faster.
+- Styling and copy improvements.
+
+> Would you like to suggest a new feature or some improvements? Please reach out to us [here](https://www.samelogic.com/team)!
+
+---
+### *v0.018*
+*December 23, 2020*
+
+### Fix: Code Generation
+Thanks for your feedback! Yes, code generation broke 😰, we fixed it 🎉. We apologize if this hindered you in any way.
+
+*What's New?*
+- Fix: Code generation.
+
+> Would you like to suggest a new feature or some improvements? Please reach out to us [here](https://www.samelogic.com/team)!
 
 ---
 ### *v0.017*
-*December 11, 2020*
+*December 20, 2020*
 
 ### Improved Onboarding and UI Improvements
 Thanks for your feedback! We've made a few things clearer with the onboarding process, and we've cleaned up a few things in the UI.
