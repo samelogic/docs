@@ -1,5 +1,5 @@
 ---
-id: getting-started
+id: releases
 title: Resease Notes
 sidebar_label: Releases
 slug: /release-notes
