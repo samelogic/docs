@@ -22,12 +22,12 @@ module.exports = {
           position: 'left',
         },
         {
-          href: '/docs/howto',
+          href: 'https://www.samelogic.com/docs/howto',
           label: 'How To Guides',
           position: 'left',
         },
         {
-          href: '/docs/release-notes',
+          href: 'https://www.samelogic.com/docs/release-notes',
           label: 'Release Notes',
           position: 'left',
         },
