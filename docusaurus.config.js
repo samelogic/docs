@@ -17,7 +17,7 @@ module.exports = {
       },
       items: [
         {
-          href: '/docs/tutorials',
+          href: 'https://www.samelogic.com/docs/tutorials',
           label: 'Tutorials',
           position: 'left',
         },
