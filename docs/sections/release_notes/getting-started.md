@@ -8,12 +8,68 @@ slug: /release-notes
 ## Overview
 At Samelogic we're building a platform for agile and contextual experiments using microsurveys. We want you to be as close to your users as you can possibly be that the correct things are built. We're always releasing new features and polishing existing functionality based on your feedback. Would you like to suggest a new feature or some improvements? Please reach out to us [here](https://www.samelogic.com/team).
 
+
+---
+### *v0.025*
+*February 26, 2021*
+
+### Improved Zapier Endpoint Testing and Shorter Code Snippet
+Thanks for your feedback! We've improved testing the Zapier endpoint within the Microsurvey creator but alerting the user when the endpoint has been successfully tested. We've also significantly shortened the copy code snippet. 
+
+*What's New?*
+- Improved Zapier endpoint testing.
+- Shorter code snippet.
+
+> Would you like to suggest a new feature or some improvements? Please reach out to us [here](https://www.samelogic.com/team)!
+
+---
+### *v0.024*
+*February 20, 2021*
+
+### Improved Zapier Integration, Google Sheets and Asana Integrations Added
+Thanks for your feedback! At your request, we've added integrations for Asana and Google Sheets and we've also improved the Zapier integration.
+
+*What's New?*
+- Asana Integration.
+- Google Sheets Integration.
+- Improved Zapier integration.
+
+
+> Would you like to suggest a new feature or some improvements? Please reach out to us [here](https://www.samelogic.com/team)!
+
+---
+### *v0.023*
+*February 18, 2021*
+
+### Fix: ID Referencing
+Thanks for your feedback! There was an issue with ID referencing which we resolved in this build.
+
+*What's New?*
+- Fixed: ID Referencing
+
+
+> Would you like to suggest a new feature or some improvements? Please reach out to us [here](https://www.samelogic.com/team)!
+
+---
+### *v0.022*
+*January 25, 2021*
+
+### Microsurvey Creator Improvements
+Thanks for your feedback! We've fixed the scrolling bug within the Microsurvey creator, along with a few other improvements.
+
+*What's New?*
+- Improved panel navigation.
+- Onboarding walkthrough is only displayed once to new users.
+- Improved click trigger.
+
+> Would you like to suggest a new feature or some improvements? Please reach out to us [here](https://www.samelogic.com/team)!
+
 ---
 ### *v0.021*
 *January 19, 2021*
 
 ### Improved Code Generation and Stability Improvements
-Thanks for your feedback! We've pushed some changes to .
+Thanks for your feedback! We've made a number of improvements to the UI and the performance of the Microsurvey creator.
 
 *What's New?*
 - Microsurvey in previewer now reflects questions in real time.
