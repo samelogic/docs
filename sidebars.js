@@ -1,7 +1,8 @@
 module.exports = {
   someSidebar: {
-    Overview: ['overview/getting-started'],
-    Editor: ['micro-survey/product/getting-started'],
-    Library: ['micro-survey/library/getting-started']
+    Introduction: ['overview/getting-started'],
+    Tutorials: ['sections/tutorials/getting-started'],
+    "How To Guides": ['sections/howto/getting-started'],
+    "Release Notes": ['sections/release_notes/releases']
   },
 };

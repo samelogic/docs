@@ -1,12 +1,12 @@
 module.exports = {
-  title: 'Samelogic Docs',
-  tagline: '',
+  title: 'Samelogic Documentation',
+  tagline: 'Collect feedback on any actions users perform.',
   url: 'https://samelogic.com/docs',
   baseUrl: process.env.DOCS_ENV && process.env.DOCS_ENV == "preview" ? '/' : '/docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.png',
-  organizationName: 'Samelogic Inc.', // Usually your GitHub org/user name.
+  organizationName: 'Samelogic, Inc.', // Usually your GitHub org/user name.
   projectName: 'Samelogic', // Usually your repo name.
   themeConfig: {
     navbar: {
@@ -17,8 +17,23 @@ module.exports = {
       },
       items: [
         {
-          href: 'https://github.com/samelogic/docs',
-          label: 'GitHub',
+          href: 'https://www.samelogic.com/docs/tutorials',
+          label: 'Tutorials',
+          position: 'left',
+        },
+        {
+          href: 'https://www.samelogic.com/docs/howto',
+          label: 'How To Guides',
+          position: 'left',
+        },
+        {
+          href: 'https://www.samelogic.com/docs/release-notes',
+          label: 'Release Notes',
+          position: 'left',
+        },
+        {
+          href: 'https://www.samelogic.com',
+          label: 'Samelogic.com',
           position: 'right',
         },
       ],
