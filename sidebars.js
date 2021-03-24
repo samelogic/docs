@@ -7,7 +7,8 @@ module.exports = {
       'workflows/overview',
       {
         Triggers: [
-          'workflows/triggers/overview', 
+          'workflows/triggers/overview',
+          'workflows/triggers/filters', 
           'workflows/triggers/page_view',
           'workflows/triggers/click_on',
           'workflows/triggers/hover_on'
