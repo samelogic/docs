@@ -8,7 +8,9 @@ module.exports = {
       {
         Triggers: [
           'workflows/triggers/overview', 
-          'workflows/triggers/page_load'
+          'workflows/triggers/page_view',
+          'workflows/triggers/click_on',
+          'workflows/triggers/hover_on'
         ]
       }
     ],
