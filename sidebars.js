@@ -1,7 +1,7 @@
 module.exports = {
   someSidebar: {
     Introduction: ['overview/getting-started'],
-    Tutorials: ['sections/tutorials/getting-started'],
+    Tutorials: ['tutorials/getting-started', 'tutorials/churn/index'],
     "How To Guides": ['sections/howto/getting-started'],
     Workflows: [
       'workflows/overview',
