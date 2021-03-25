@@ -18,7 +18,7 @@ module.exports = {
     Microsurveys: [
       'microsurveys/overview', 
       {
-        Fields: ['microsurveys/fields/long_text']
+        Fields: ['microsurveys/fields/long_text', 'microsurveys/fields/multiple_choice']
       },
     ],
     "Release Notes": ['sections/release_notes/releases']
