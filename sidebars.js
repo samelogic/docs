@@ -7,15 +7,18 @@ module.exports = {
       'workflows/overview',
       {
         Triggers: [
-          'workflows/triggers/overview', 
-          'workflows/triggers/page_load'
+          'workflows/triggers/overview',
+          'workflows/triggers/filters', 
+          'workflows/triggers/page_view',
+          'workflows/triggers/click_on',
+          'workflows/triggers/hover_on'
         ]
       }
     ],
     Microsurveys: [
       'microsurveys/overview', 
       {
-        Fields: ['microsurveys/fields/long_text']
+        Fields: ['microsurveys/fields/long_text', 'microsurveys/fields/multiple_choice']
       },
     ],
     "Release Notes": ['sections/release_notes/releases']
