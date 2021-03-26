@@ -4,4 +4,15 @@ title: Workflows Overview
 slug: /workflows
 ---
 
-Workflows overview
+Workflows make it easy to automate various steps that should happen during an experiment.
+
+### Triggers
+
+Triggers are defined as a list of events that occur in the application to start the workflow. Please see [Triggers Overview documentation](./workflows/triggers) for more details.
+
+### Steps
+
+Steps are defined as a group of actions that are executed after a workflow is triggered.
+
+Steps are **asynchronous**. The initialization of a step can happen via a trigger or other step events.
+Steps contain events that are fired based on their specification. Please refer to their docs for more details on what events they expose and under what criteria they are fired.
