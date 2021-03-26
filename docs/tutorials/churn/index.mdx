@@ -1,10 +1,78 @@
 ---
 id: index
-title: Preventing User Churn
-sidebar_label: "Preventing User Churn"
-slug: /tutorials/preventing-user-churn
+title: Reducing User Churn
+sidebar_label: "Reducing User Churn"
+slug: /tutorials/reducing-user-churn
 ---
 
-## Getting started
+User churn happens when users are unhappy with your product. This can lead to user offboarding if the product supports this flow. Offboarding flows can be; account deactivation, deletion, subscription cancelation, or downgrade.
 
-test
+This tutorial will focus on reducing churn in offboarding flows.
+
+Many offboarding flows are simple, usually just a button with a confirmation. Some products use post-offboarding flows and add a few questions on this page to understand why customers would want to cancel. Other products will use post-offboarding flows and send exit surveys after the customer has canceled.
+
+We will concentrate on Pre-Offboarding as this allows us to build dynamic behaviors into the application to prevent churn if possible.
+
+## 1. Understanding why churn occurs
+
+The simplest way is to ask the user. A Microsurvey can be displayed to the user when they visit the offboarding page.
+
+### Triggering
+
+Using the page view event can trigger the workflow with the Microsurvey on page view before the user even confirms or begins the process.
+
+### Asking specific questions
+
+A multi-question survey with a quantitative then qualitative question can narrow in on the exact reason the customer is leaving. The Offboarding Question Template can automatically set this up.
+
+### Quantitative Questions
+
+The first question should allow for a quick selection that lowers the cognitive load on the user. A multiple-choice question with the title `Tell us why you're leaving` with the options:
+
+- Its too expensive
+- I don't use `the product` enough
+- `the product` isn't what I initially thought it would be
+- I found another product with better features -`the product` is hard to use
+- Other
+
+It is good practice to modify these options or add more to make them contextual to your product. The goal is to provide a selection so that the team can make actionable decisions.
+
+It is always recommended to have `other` as a last option as not every option will meet the user's needs.
+
+### Qualitative Questions
+
+The next question should be calibrated but allows for more expression. A long text question usually fits this need. A good communication technique is to phrase these questions with a `what` or `how` to get specific, actionable outcomes.
+
+Avoid `why` questions as it can cause users to give one-word answers or give too broad responses where it's hard to decipher action.
+
+Some examples of these questions:
+
+- How could we make the product solve your need?
+- What features would you have liked?
+
+### Dynamic Questions
+
+The follow-up questions can be based on question logic. Suppose the user selected a particular choice from the previous question. In that case, the next question can be calibrated to extract even more actionable information.
+
+Let's say the user selects an option that represents `pricing`. A follow-up question could be a multiple-choice question asking, "what would be your price point?" with choices of various prices.
+The qualitative question could assume that the product lacks enough features for the price and then asks, "What problem did we not solve?"
+
+## 2. Educating users
+
+Suppose users are churning because they are not aware of features in the product. In that case, a microsurvey can be used to educate users on available use cases and features.
+
+This flows nicely from the previous point that is built on dynamic questions.
+
+### Dynamic Calibrated Questions
+
+Let's say the user selects a question choice about **features**. There are a few directions that this can be taken to arrive at educating the customer about a use case.
+
+A second multiple-choice question can show a list of features asking something of the sort "Which feature were we lacking?", which indirectly educates the user that the feature exists.
+
+The microsurvey can also use a second long text question to detect entities and objects. The entity detection can then be used to configure the survey-end.
+
+The survey-end can show a link or screenshot of this feature to go directly to that part of the application.
+
+## Conclusion
+
+The most churn comes from poor customer service. The fraction of the churn that is caused by other reasons can be reduced with properly configured microsurveys. For the churn we cannot prevent, it should still be considered a win if we can collect actionable feedback. The organization can use the feedback to iterate on some part of the product or business.
