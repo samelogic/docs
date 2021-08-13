@@ -4,7 +4,25 @@ module.exports = {
     Developers: [
       "developers/overview",
       {
-        SDKs: ["developers/sdks/web/introduction"],
+        type: "category",
+        label: "SDKs",
+        collapsed: false,
+        items: [
+          {
+            type: "category",
+            label: "Javascript",
+            collapsed: false,
+            items: [
+              "developers/sdks/web/introduction",
+              "developers/sdks/web/reference/index",
+              {
+                type: "link",
+                label: "Releases",
+                href: "https://github.com/Samelogic/samelogic.js/releases",
+              },
+            ],
+          },
+        ],
       },
     ],
     Tutorials: ["tutorials/getting-started", "tutorials/churn/index"],
