@@ -1,0 +1,68 @@
+---
+id: introduction
+title: Web - Introduction
+slug: /developers/sdks/web
+---
+
+## SDK Installation
+
+### Installing via the Snippet
+
+You can install the Javascript SDK using a small snippet of code that you paste on your website. The snippet should be placed on every page that
+you want Samelogic to interact with. The snippet should be pasted at the bottom, just before the `</html>` tag, replacing the `ENVIRONMENT_ID` with
+your Environment ID.
+
+:::info
+Your `ENVIRONMENT_ID` is found in the Project Settings page.
+:::
+
+```markup
+<script src="https://unpkg.com/@samelogic/samelogic-js@0.0.10/dist/samelogic.min.js"></script>
+<script>
+const samelogic = new Samelogic("ENVIRONMENT_ID");
+samelogic.init();
+</script>
+
+```
+
+## Installing with npm or yarn
+
+Alternatively, you can install the [npm module](https://www.npmjs.com/package/@samelogic/samelogic-js) and embed the SDK directly in the your product.
+
+Install using NPM:
+
+```bash
+npm install @samelogic/samelogic-js
+```
+
+Install using yarn
+
+```bash
+yarn add @samelogic/samelogic-js
+```
+
+This will now allow you to import samelogic in your project:
+
+```javascript
+import Samelogic from "@samelogic/samelogic-js";
+```
+
+### Usage & Examples
+
+#### Initialization
+
+The exported default is a class and must be instantiated and initialized. The `ENVIRONMENT_ID` for your Samelogic project is required.
+The `init` method will start up Samelogic and no further interaction is necessary.
+
+```javascript
+const samelogic = new Samelogic("ENVIRONMENT_ID");
+samelogic.init();
+```
+
+Samelogic allows you to configure multiple environments per project. Usually this would be a _development_ and a _production_ environment.
+Development environment should be used for testing the integration of Samelogic and your product, and the production environment should be used
+for your live product. Data is not shared between environments.
+
+#### Initialization with Options
+
+Custom options can be passed into the constructor. A list of all possible options for the client can be found [here](./web/reference/index).

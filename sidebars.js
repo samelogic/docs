@@ -1,6 +1,12 @@
 module.exports = {
   someSidebar: {
     Introduction: ["overview/getting-started"],
+    Developers: [
+      "developers/overview",
+      {
+        SDKs: ["developers/sdks/web/introduction"],
+      },
+    ],
     Tutorials: ["tutorials/getting-started", "tutorials/churn/index"],
     "How To Guides": ["howto/getting-started"],
     Workflows: [
