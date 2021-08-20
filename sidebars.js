@@ -25,8 +25,8 @@ module.exports = {
         ],
       },
     ],
-    Developers: [
-      "developers/overview",
+    "Technical References": [
+      "references/overview",
       {
         type: "category",
         label: "SDKs",
@@ -37,9 +37,9 @@ module.exports = {
             label: "Javascript",
             collapsed: false,
             items: [
-              "developers/sdks/web/introduction",
-              "developers/sdks/web/advanced",
-              "developers/sdks/web/reference/samelogic-js",
+              "references/sdks/web/introduction",
+              "references/sdks/web/advanced",
+              "references/sdks/web/reference/samelogic-js",
               {
                 type: "link",
                 label: "Releases",

@@ -10,7 +10,7 @@ const { exec } = require("child_process");
 const jsonDocs = [
   {
     input: "node_modules/@samelogic/samelogic-js/dist",
-    output: "docs/developers/sdks/web/reference",
+    output: "docs/references/sdks/web/reference",
   },
 ];
 
