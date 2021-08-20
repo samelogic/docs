@@ -4,6 +4,8 @@
 
 ## SamelogicClient.init() method
 
+Initializes the client instance. This will start the client to begin listening for triggers and executing worklows.
+
 <b>Signature:</b>
 
 ```typescript

@@ -16,11 +16,11 @@ export declare class SamelogicClient
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(projectId, options)](./samelogic-js.samelogicclient._constructor_.md) |  | Constructs a new instance of the <code>SamelogicClient</code> class |
+|  [(constructor)(projectId, options)](./samelogic-js.samelogicclient._constructor_.md) |  | SamelogicClient SDK API - instance constructor. The Samelogic class handles the creation and configuration of a client instance. |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [init()](./samelogic-js.samelogicclient.init.md) |  |  |
+|  [init()](./samelogic-js.samelogicclient.init.md) |  | Initializes the client instance. This will start the client to begin listening for triggers and executing worklows. |
 

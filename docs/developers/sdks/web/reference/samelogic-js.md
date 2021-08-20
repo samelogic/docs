@@ -10,3 +10,22 @@
 |  --- | --- |
 |  [SamelogicClient](./samelogic-js.samelogicclient.md) | SamelogicClient SDK API. The Samelogic class handles the creation of a client instance. |
 
+## Interfaces
+
+|  Interface | Description |
+|  --- | --- |
+|  [ClientProject](./samelogic-js.clientproject.md) | The client project object that represents a Samelogic Project |
+|  [Options](./samelogic-js.options.md) | The options to pass into module initialization |
+|  [StepConfig](./samelogic-js.stepconfig.md) |  |
+|  [StepNeeds](./samelogic-js.stepneeds.md) |  |
+|  [TriggerConfig](./samelogic-js.triggerconfig.md) |  |
+|  [TriggerEventConfig](./samelogic-js.triggereventconfig.md) |  |
+|  [WorkflowConfig](./samelogic-js.workflowconfig.md) |  |
+
+## Type Aliases
+
+|  Type Alias | Description |
+|  --- | --- |
+|  [LogicalOperator](./samelogic-js.logicaloperator.md) | Taken from: https://stackoverflow.com/a/53215240/400861 |
+|  [TriggerEventConditions](./samelogic-js.triggereventconditions.md) |  |
+

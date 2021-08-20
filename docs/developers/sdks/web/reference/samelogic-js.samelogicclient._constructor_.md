@@ -4,7 +4,7 @@
 
 ## SamelogicClient.(constructor)
 
-Constructs a new instance of the `SamelogicClient` class
+SamelogicClient SDK API - instance constructor. The Samelogic class handles the creation and configuration of a client instance.
 
 <b>Signature:</b>
 
@@ -17,5 +17,5 @@ constructor(projectId: string, options?: Options | undefined);
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  projectId | string |  |
-|  options | Options \| undefined |  |
+|  options | [Options](./samelogic-js.options.md) \| undefined |  |
 
