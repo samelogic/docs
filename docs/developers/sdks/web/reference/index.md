@@ -13,4 +13,4 @@ hide_title: true
 
 |  Package | Description |
 |  --- | --- |
-|  [@samelogic/samelogic-js](./samelogic-js.md) |  |
+|  [@samelogic/samelogic-js](./samelogic-js.md) | Samelogic SDK contains the client that is required to run your Samelogic Projects in your product.<!-- -->The main entry point to samelogic.js is the  class, which when instantiated with an environmentId, will return an object that is ready to use. This object requires an init() method to be called for the client to start. |
