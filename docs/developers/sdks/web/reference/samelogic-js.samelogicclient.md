@@ -21,7 +21,7 @@ export declare class SamelogicClient
 
 |  Constructor | Modifiers | Description |
 |  --- | --- | --- |
-|  [(constructor)(projectId, options)](./samelogic-js.samelogicclient._constructor_.md) |  | SamelogicClient SDK API - instance constructor. The Samelogic class handles the creation and configuration of a client instance. |
+|  [(constructor)(environmentId, options)](./samelogic-js.samelogicclient._constructor_.md) |  | SamelogicClient SDK API - instance constructor. The Samelogic class handles the creation and configuration of a client instance. |
 
 ## Methods
 

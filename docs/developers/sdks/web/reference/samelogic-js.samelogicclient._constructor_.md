@@ -14,12 +14,12 @@ SamelogicClient SDK API - instance constructor. The Samelogic class handles the 
 <b>Signature:</b>
 
 ```typescript
-constructor(projectId: string, options?: Options | undefined);
+constructor(environmentId: string, options?: Options | undefined);
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  projectId | string |  |
-|  options | [Options](./samelogic-js.options.md) &#124; undefined |  |
+|  environmentId | string | The <code>ENVIRONMENT_ID</code> provided that you have received for creating an project on the Samelogic platform. |
+|  options | [Options](./samelogic-js.options.md) &#124; undefined | The options can be used to override the default project settings that are retrieved for the environmentId paramter if [Options.clientProject](./samelogic-js.options.clientproject.md) is set on this parameter. The environmentId will be ignored and the clientProject will be used instead. |
