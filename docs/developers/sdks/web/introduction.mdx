@@ -65,4 +65,15 @@ for your live product. Data is not shared between environments.
 
 #### Initialization with Options
 
-Custom options can be passed into the constructor. A list of all possible options for the client can be found [here](./web/reference/index).
+Custom options can be passed into the constructor. A list of all possible options for the client can be found [here](./web/reference/samelogic-js.options).
+
+```javascript
+const options = {};
+const samelogic = new Samelogic("ENVIRONMENT_ID", options);
+samelogic.init();
+```
+
+:::info
+Please note that if the object contains [options.clientProject](./web/reference/samelogic-js.workflowconfig) property, it will override the project related to the `ENVIRONMENT_ID`.
+This will allow you to run the SDK with your own project configurations without getting it from the Samelogic Platform.
+:::

@@ -14,6 +14,7 @@ module.exports = {
             collapsed: false,
             items: [
               "developers/sdks/web/introduction",
+              "developers/sdks/web/advanced",
               "developers/sdks/web/reference/samelogic-js",
               {
                 type: "link",
