@@ -1,5 +1,5 @@
 [context.deploy-preview]
-environment= { DOCS_ENV="preview" }
+environment = {DOCS_ENV = "preview", NODE_VERSION = "14.17.4"}
 
 [context.production]
-environment= { DOCS_ENV="production" }
+environment = {DOCS_ENV = "production", NODE_VERSION = "14.17.4"}
