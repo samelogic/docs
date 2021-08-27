@@ -6,3 +6,43 @@ hide_title: true
 ---
 
 ## SDK Installation - Google Tag Manager
+
+You can install the Samelogic javascript SDD via Google-Tag-Manager (GTM) via our tag template. This
+allows a fast way to install and configure the script on the website without any knowledge of coding.
+
+## Installing via GTM
+
+Installing the SDK in GTM can be in the following steps:
+
+1. Setup variables.
+2. Setup tag.
+3. Deploy tag.
+
+### 1. Setup variables
+
+We are going to create a variable that will hold our Samelogic's `APP_ID`.
+
+1. Navigate to the following: Variables > User-Defined Variables > New
+2. Give your variable a name, something like `SAMELOGIC_PROD_APP_ID`. You can have multiple environments, so keep the name specific.
+3. Choose variable type **Constant**.
+4. In the _value_ field, enter your `APP_ID`.
+
+:::info
+Your `APP_ID` is found in the Project Settings page.
+:::
+
+### 2. Setup tag
+
+We are going to setup the tag that will install the SDK on the website.
+
+1. Navigate to the following: Tags > New > Tag Configuration > Choose tag type.
+2. Click the _Community Template Gallery_ button > Search for `Samelogic` template.
+3. Click the Samelogic template > Add to workspace.
+4. On the configure screen, look for `APP_ID` and then select the variable `SAMELOGIC_PROD_APP_ID`. You can also use a template string here, `{{SAMELOGIC_PROD_APP_ID}}.
+5. Set the Triggering to be **All Pages**.
+
+### Deploy tag
+
+Submit the Workspace, create the revision and then save.
+
+Check the url of your website, look in the network tab and check if `*/samelogic.min.js` was loaded.
