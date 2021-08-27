@@ -1,6 +1,6 @@
 [build]
 command = "npm run build"
-publish = "public"
+publish = "build"
 
 [context.deploy-preview]
 environment = {DOCS_ENV = "preview", NODE_VERSION = "14.17.4"}
