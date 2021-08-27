@@ -34,7 +34,7 @@ The following snippet will load and initialize the SDK. Please replace _YOUR_APP
 
 This code will load the script from jsDelivr, which is the CDN that serves our SDK script.
 
-## Installing with npm or yarn
+### Installing with npm or yarn
 
 Alternatively, you can install the [npm module](https://www.npmjs.com/package/@samelogic/samelogic-js) and embed the SDK directly in the your product.
 
@@ -56,9 +56,9 @@ This will now allow you to import samelogic in your project:
 import Samelogic from "@samelogic/samelogic-js";
 ```
 
-### Usage & Examples
+## Usage & Examples
 
-#### Initialization
+### Initialization
 
 The SDK must be initialized before it can be used. The `APP_ID` for your Samelogic project is required.
 The `Samelogic.init` method will start up Samelogic and no further interaction is necessary. The default export is a class
@@ -84,7 +84,7 @@ async samelogic.init()
 The SDK can also be utilized without the need for the Samelogic Platform. You can pass in your own Project and Workflow settings without the need of an `APP_ID`.
 Please see the [advanced topics](/references/sdks/web/advanced#using-without-samelogic-platform).
 
-#### Environments
+### Environments
 
 Samelogic allows you to configure multiple environments per project. Usually this would be a _development_ and a _production_ environment.
 Development environment should be used for testing the integration of Samelogic and your product, and the production environment should be used
