@@ -11,14 +11,27 @@ The Samelogic SDK is separated into 2 systems:
 1. The Samelogic Client SDK - this is the main library that you interact with, it contains the `SamelogicClient`.
 2. The Samelogic Steps - these are workflow steps that are dynamically loaded after the SamelogicClient is initialized.
 
-## Using without Samelogic Platform
+#### Use without the Samelogic platform
 
-The Samelogic SDK allows you to utilize the power of the workflow execution without the Samelogic Platform, requiring no `ENVIRONMENT_ID`.
+The Samelogic SDK allows you to utilize the power of the workflow execution without the Samelogic Platform, requiring no `APP_ID`.
+
+This requires leaving off the `appId` and replacing it with the [clientProject](/references/sdks/web/reference/samelogic-js.clientproject) property property.
+This will start the SDK without any communication to Samelogic APIs. It will load the steps from the url specified in the config. This allows
+you to use the SDK without requiring access to our servers.
 
 ```javascript
-const options = {
-  clientProject: {...}
-};
-const samelogic = new Samelogic("", options);
-samelogic.init();
+async Samelogic.init({
+  clientProject: {
+    name: 'A project name',
+    workflows: [
+      {
+        ...
+      }
+    ]
+  }
+});
 ```
+
+:::info
+Without the `APP_ID`, Samelogic will not be able to track and provide analytics and insights into your workflows and experiments.
+:::

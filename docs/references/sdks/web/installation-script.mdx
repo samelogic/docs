@@ -70,23 +70,22 @@ async Samelogic.init({
 });
 ```
 
-Behind the scenes, `init` will instantiate a new [**Samelogic**]() instance and then initializes it.
+Behind the scenes, `init` will instantiate a new [**Samelogic**](/references/sdks/web/reference/samelogic-js.samelogic) instance and then initializes it.
+
+The following code is an alternative but more developer friendly. It allows you to interact with the object later on in more complex cases.
+
+```javascript
+const samelogic = new Samelogic({
+  appId: "APP_ID"
+});
+async samelogic.init()
+```
+
+The SDK can also be utilized without the need for the Samelogic Platform. You can pass in your own Project and Workflow settings without the need of an `APP_ID`.
+Please see the [advanced topics](/references/sdks/web/advanced#using-without-samelogic-platform).
+
+#### Environments
 
 Samelogic allows you to configure multiple environments per project. Usually this would be a _development_ and a _production_ environment.
 Development environment should be used for testing the integration of Samelogic and your product, and the production environment should be used
 for your live product. Data is not shared between environments.
-
-#### Initialization with Options
-
-Custom options can be passed into the constructor. A list of all possible options for the client can be found [here](./web/reference/samelogic-js.options).
-
-```javascript
-const options = {};
-const samelogic = new Samelogic("ENVIRONMENT_ID", options);
-samelogic.init();
-```
-
-:::info
-Please note that if the object contains [options.clientProject](./web/reference/samelogic-js.workflowconfig) property, it will override the project related to the `ENVIRONMENT_ID`.
-This will allow you to run the SDK with your own project configurations without getting it from the Samelogic Platform.
-:::
