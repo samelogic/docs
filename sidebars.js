@@ -37,7 +37,8 @@ module.exports = {
             label: "Javascript",
             collapsed: false,
             items: [
-              "references/sdks/web/introduction",
+              "references/sdks/web/installation-script",
+              "references/sdks/web/installation-gtm/index",
               "references/sdks/web/advanced",
               "references/sdks/web/reference/samelogic-js",
               {
