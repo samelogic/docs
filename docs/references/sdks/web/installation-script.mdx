@@ -1,0 +1,91 @@
+---
+id: installation-script
+title: Installation - Script
+slug: /references/sdks/web/installation/script
+hide_title: true
+---
+
+## SDK Installation
+
+### Installing via the Snippet
+
+You can install the Javascript SDK using a small snippet of code that you paste on your website. This will be a short piece of Javascript that you will include
+in your HTML that will asynchronously load the SDK into your website. This is loaded asynchronously so as to not block loading any other content on the page.
+
+The snippet should be placed on every page that you want Samelogic to interact with. The snippet should be pasted at the bottom, just before the `</html>` tag, replacing the `APP_ID` with
+your App Id.
+
+:::info
+Your `APP_ID` is found in the Project Settings page.
+:::
+
+The following snippet will load and initialize the SDK. Please replace _YOUR_APP_ID_ with the `APP_ID`.
+
+```markup
+<script>
+  window.slAsyncInit = function() {
+    Samelogic.init({
+      appId : 'YOUR_APP_ID',
+    });
+  };
+</script>
+<script async defer crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/@samelogic/samelogic-js/dist/samelogic.min.js"></script>
+```
+
+This code will load the script from jsDelivr, which is the CDN that serves our SDK script.
+
+## Installing with npm or yarn
+
+Alternatively, you can install the [npm module](https://www.npmjs.com/package/@samelogic/samelogic-js) and embed the SDK directly in the your product.
+
+Install using NPM:
+
+```bash
+npm install @samelogic/samelogic-js
+```
+
+Install using yarn
+
+```bash
+yarn add @samelogic/samelogic-js
+```
+
+This will now allow you to import samelogic in your project:
+
+```javascript
+import Samelogic from "@samelogic/samelogic-js";
+```
+
+### Usage & Examples
+
+#### Initialization
+
+The SDK must be initialized before it can be used. The `APP_ID` for your Samelogic project is required.
+The `Samelogic.init` method will start up Samelogic and no further interaction is necessary. The default export is a class
+with a static method `init()`.
+
+```javascript
+async Samelogic.init({
+  appId: "APP_ID",
+});
+```
+
+Behind the scenes, `init` will instantiate a new [**Samelogic**](/references/sdks/web/reference/samelogic-js.samelogic) instance and then initializes it.
+
+The following code is an alternative but more developer friendly. It allows you to interact with the object later on in more complex cases.
+
+```javascript
+const samelogic = new Samelogic({
+  appId: "APP_ID"
+});
+async samelogic.init()
+```
+
+The SDK can also be utilized without the need for the Samelogic Platform. You can pass in your own Project and Workflow settings without the need of an `APP_ID`.
+Please see the [advanced topics](/references/sdks/web/advanced#using-without-samelogic-platform).
+
+#### Environments
+
+Samelogic allows you to configure multiple environments per project. Usually this would be a _development_ and a _production_ environment.
+Development environment should be used for testing the integration of Samelogic and your product, and the production environment should be used
+for your live product. Data is not shared between environments.
