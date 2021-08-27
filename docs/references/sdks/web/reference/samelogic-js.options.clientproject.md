@@ -9,6 +9,8 @@ hide_title: true
 
 ## Options.clientProject property
 
+clientProject can be used to override the default project settings that are retrieved using the [Options.appId](./samelogic-js.options.appid.md)<!-- -->. The [Options.appId](./samelogic-js.options.appid.md) will be ignored and the clientProject will be used instead.
+
 <b>Signature:</b>
 
 ```typescript

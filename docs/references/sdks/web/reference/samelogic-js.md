@@ -10,13 +10,13 @@ hide_title: true
 
 Samelogic SDK contains the client that is required to run your Samelogic Projects in your product.
 
-The main entry point to samelogic.js is the [SamelogicClient](./samelogic-js.samelogicclient.md) class, which when instantiated with an environmentId, will return an object that is ready to use. This object requires an init() method to be called for the client to start.
+The main entry point to samelogic.js is the [Samelogic](./samelogic-js.samelogic.md) class, which when instantiated with an appId, will return an object that is ready to use. This object requires an init() method to be called for the client to start.
 
 ## Classes
 
 |  Class | Description |
 |  --- | --- |
-|  [SamelogicClient](./samelogic-js.samelogicclient.md) | SamelogicClient SDK API. The Samelogic class handles the creation of a client instance. |
+|  [Samelogic](./samelogic-js.samelogic.md) | Samelogic Client SDK API. The Samelogic class handles the creation of a client instance. |
 
 ## Interfaces
 

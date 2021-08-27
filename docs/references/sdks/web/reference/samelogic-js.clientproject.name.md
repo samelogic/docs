@@ -9,6 +9,8 @@ hide_title: true
 
 ## ClientProject.name property
 
+The name of the project.
+
 <b>Signature:</b>
 
 ```typescript

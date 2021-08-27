@@ -21,5 +21,6 @@ export interface Options
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [clientProject?](./samelogic-js.options.clientproject.md) | [ClientProject](./samelogic-js.clientproject.md) | <i>(Optional)</i> |
+|  [appId](./samelogic-js.options.appid.md) | string | The <code>ENVIRONMENT_ID</code> provided, which you have received for creating a project on the Samelogic platform. |
+|  [clientProject?](./samelogic-js.options.clientproject.md) | [ClientProject](./samelogic-js.clientproject.md) | <i>(Optional)</i> clientProject can be used to override the default project settings that are retrieved using the [Options.appId](./samelogic-js.options.appid.md)<!-- -->. The [Options.appId](./samelogic-js.options.appid.md) will be ignored and the clientProject will be used instead. |
 |  [env](./samelogic-js.options.env.md) | env |  |

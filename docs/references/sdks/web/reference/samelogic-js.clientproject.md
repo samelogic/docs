@@ -21,5 +21,5 @@ export interface ClientProject
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [name](./samelogic-js.clientproject.name.md) | string |  |
+|  [name](./samelogic-js.clientproject.name.md) | string | The name of the project. |
 |  [workflows](./samelogic-js.clientproject.workflows.md) | [WorkflowConfig](./samelogic-js.workflowconfig.md)<!-- -->\[\] |  |
