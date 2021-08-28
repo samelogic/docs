@@ -13,15 +13,14 @@ The Samelogic SDK is separated into 2 systems:
 
 ## Self-hosted
 
-The Samelogic SDK allows you to utilize the power of the workflow execution without the Samelogic Platform, requiring no `APP_ID`.
+The Samelogic SDK allows you to utilize the power of the workflow execution without the Samelogic Platform, requiring no `APP_ID`. You can supply all the data it needs to execute workflows from your own source, such as your own API or hard coded.
 
-This requires leaving off the `appId` and replacing it with the [clientProject](/references/sdks/web/reference/samelogic-js.clientproject) property property.
-The SDK will run without any communication to Samelogic APIs. It will load the steps from the url specified in the config. This allows
-you to use the SDK without requiring access to our servers.
+By leaving off the `appId` and replacing it with the [project](/references/sdks/web/reference/samelogic-js.project) property.
+The SDK will run using the supplied project settings and will not need to communicate with Samelogic APIs.
 
 ```javascript
 async Samelogic.init({
-  clientProject: {
+  project: {
     name: 'A project name',
     workflows: [
       {
@@ -33,5 +32,17 @@ async Samelogic.init({
 ```
 
 :::info
-Without the `APP_ID`, Samelogic will not be able to track and provide analytics and insights into your workflows and experiments.
+Self-hosted Samelogic will not be able to track and provide analytics and insights into your workflows and experiments.
+:::
+
+### Workflows
+
+Workflows represent a set of steps that needs to be taken when some event is triggered.
+
+### Steps
+
+Steps are processes that are executed within your workflow. Steps are executed **asynchronously** and are long running. Steps exposes events that can be used to run subsequent steps.
+
+:::info
+You can build your own custom steps and host them whereever you want and refer to it by its url.
 :::
