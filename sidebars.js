@@ -39,7 +39,7 @@ module.exports = {
             items: [
               "references/sdks/web/installation-script",
               "references/sdks/web/installation-gtm/index",
-              "references/sdks/web/advanced",
+              "references/sdks/web/advanced/index",
               "references/sdks/web/reference/samelogic-js",
               {
                 type: "link",
