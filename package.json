@@ -13,9 +13,9 @@
     "build-references": "node scripts/make-reference-docs.js"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-beta.4",
-    "@docusaurus/plugin-google-gtag": "^2.0.0-beta.4",
-    "@docusaurus/preset-classic": "2.0.0-beta.4",
+    "@docusaurus/core": "2.0.0-beta.5",
+    "@docusaurus/plugin-google-gtag": "^2.0.0-beta.5",
+    "@docusaurus/preset-classic": "2.0.0-beta.5",
     "@docusaurus/theme-live-codeblock": "^2.0.0-beta.5",
     "@mdx-js/react": "^1.6.22",
     "@samelogic/samelogic-js": "^2.0.10",
