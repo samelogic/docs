@@ -22,13 +22,19 @@ The Samelogic SDK allows you to utilize the power of the workflow execution with
 By leaving off the `appId` and replacing it with the [project](/references/sdks/web/reference/samelogic-js.clientProject) property.
 The SDK will run using the supplied project settings and will not need to communicate with Samelogic APIs.
 
-### Code Demo:
-
-<CodePen id="BaZKeXQ" />
-
 :::info
 Self-hosted Samelogic will not be able to track and provide analytics and insights into your workflows and experiments.
 :::
+
+### Demo
+
+Below is a demo of a project that is setup to accomplish the following:
+
+1. Attach a Beacon to an element.
+2. When the Beacon is clicked, it starts a Microsurvey step.
+3. When the Microsurvey is submitted, it sends the data to a Webhook step which does an HTTP POST.
+
+<CodePen id="BaZKeXQ" />
 
 ### Workflows
 
