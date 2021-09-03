@@ -1,16 +1,15 @@
 import React from "react";
-import clsx from "clsx";
-
-import useThemeContext from "@theme/hooks/useThemeContext";
+// import clsx from "clsx";
+// import useThemeContext from "@theme/hooks/useThemeContext";
 
 interface Props {
   id;
 }
 
 export const CodePen = ({ id }: Props): JSX.Element => {
-  const { isDarkTheme } = useThemeContext();
+  // const { isDarkTheme } = useThemeContext();
 
-  const clientTheme = isDarkTheme ? ["dark"] : ["light"];
+  // const clientTheme = isDarkTheme ? ["dark"] : ["light"];
 
   return (
     <iframe
@@ -18,7 +17,7 @@ export const CodePen = ({ id }: Props): JSX.Element => {
       height="480px"
       scrolling="no"
       title="Samelogic SDK Advanced Demo"
-      src={`https://codepen.io/shawnmclean/embed/${id}?default-tab=html%2Cresult&editable=true&theme-id=${clientTheme}`}
+      src={`https://codepen.io/shawnmclean/embed/${id}?default-tab=html%2Cresult&editable=true&theme-id=dark`}
       frameBorder="0"
       loading="lazy"
       allowTransparency={true}
