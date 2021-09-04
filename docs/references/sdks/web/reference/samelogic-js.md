@@ -22,17 +22,19 @@ The main entry point to samelogic.js is the [Samelogic](./samelogic-js.samelogic
 
 |  Interface | Description |
 |  --- | --- |
-|  [ClientProject](./samelogic-js.clientproject.md) | The client project object that represents a Samelogic Project |
-|  [Options](./samelogic-js.options.md) | The options to pass into module initialization |
+|  [ElementEventProps](./samelogic-js.elementeventprops.md) | The shape of the payload for the ElementClick and ElementMouseOver events. |
+|  [Options](./samelogic-js.options.md) | The options to pass into [Samelogic](./samelogic-js.samelogic.md) initialization. |
+|  [PageEventProps](./samelogic-js.pageeventprops.md) | The shape of the payload for the PageView event. |
+|  [Project](./samelogic-js.project.md) | The project object that represents the Samelogic Project for the current environment. |
 |  [StepConfig](./samelogic-js.stepconfig.md) |  |
 |  [StepNeeds](./samelogic-js.stepneeds.md) |  |
-|  [TriggerConfig](./samelogic-js.triggerconfig.md) |  |
-|  [TriggerEventConfig](./samelogic-js.triggereventconfig.md) |  |
-|  [WorkflowConfig](./samelogic-js.workflowconfig.md) |  |
+|  [TriggerConfig](./samelogic-js.triggerconfig.md) | The configuration of a trigger. Triggers are made up of events. All events must be met before the trigger is fired. The order of the event is not taken into account. |
+|  [TriggerEventProps](./samelogic-js.triggereventprops.md) | The properties of an event. |
+|  [WorkflowConfig](./samelogic-js.workflowconfig.md) | This is the configuration of a workflow. Workflows are made up of steps and triggers. Triggers are events used to trigger the execution of steps. |
 
 ## Type Aliases
 
 |  Type Alias | Description |
 |  --- | --- |
-|  [LogicalOperator](./samelogic-js.logicaloperator.md) | Taken from: https://stackoverflow.com/a/53215240/400861 |
-|  [TriggerEventConditions](./samelogic-js.triggereventconditions.md) |  |
+|  [TriggerEvents](./samelogic-js.triggerevents.md) | The different trigger events that are supported. The type is dependent on the [TriggerEventProps.event](./samelogic-js.triggereventprops.event.md) property. |
+|  [TriggerEventType](./samelogic-js.triggereventtype.md) | The type of event. <code>ElementClick</code> and <code>ElementMouseOver</code> should have the prop |

@@ -9,7 +9,7 @@ hide_title: true
 
 ## Options.appId property
 
-The `ENVIRONMENT_ID` provided, which you have received for creating a project on the Samelogic platform.
+The `APP_ID` provided, which you have received for creating a project on the Samelogic platform.
 
 <b>Signature:</b>
 
