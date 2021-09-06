@@ -9,19 +9,18 @@ hide_title: true
 
 ## TriggerEventType type
 
-The type of event. `ElementClick` and `ElementMouseOver` should have the prop
+The type of event. This will determine what properties of [TriggerEvents](./samelogic-js.triggerevents.md) are required.
 
 <b>Signature:</b>
 
 ```typescript
-export declare type TriggerEventType = 
-/** Element click event
- * ref: https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event
- */
-'ElementClick'
-/** Element mouse over event
- * ref: https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseover_event
- * note: Will fire once, including all child elements, see mouseenter for diference: https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseenter_event
- */
- | 'ElementMouseOver' | 'PageView';
+export declare type TriggerEventType = 'ElementClick' | 'ElementMouseOver' | 'PageView';
 ```
+
+## Remarks
+
+`ElementClick` refers to the click event on a DOM element, see [https://developer.mozilla.org/en-US/docs/Web/API/Element/click\_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event)<!-- -->.
+
+`ElementMouseOver` refers to the mouseover event on a DOM element, see [https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseover\_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseover_event)<!-- -->. note: This mouseover event will fire and bubble the event up the DOM, see [https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseenter\_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseenter_event)
+
+`PageView` matching occurs when the page is loaded or the url has changed.

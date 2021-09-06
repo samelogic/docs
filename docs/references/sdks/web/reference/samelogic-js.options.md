@@ -22,4 +22,4 @@ export interface Options
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [appId](./samelogic-js.options.appid.md) | string | The <code>APP_ID</code> provided, which you have received for creating a project on the Samelogic platform. |
-|  [project?](./samelogic-js.options.project.md) | [Project](./samelogic-js.project.md) | <i>(Optional)</i> project can be used to override the default project settings that are retrieved using the [Options.appId](./samelogic-js.options.appid.md)<!-- -->. The [Options.appId](./samelogic-js.options.appid.md) will be ignored and this project will be used instead. |
+|  [workflows](./samelogic-js.options.workflows.md) | [WorkflowConfig](./samelogic-js.workflowconfig.md)<!-- -->\[\] | The list of currently \*\*active\*\* workflows. Worklows must be published to be active. |

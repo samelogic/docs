@@ -9,7 +9,7 @@ hide_title: true
 
 ## TriggerEvents type
 
-The different trigger events that are supported. The type is dependent on the [TriggerEventProps.event](./samelogic-js.triggereventprops.event.md) property.
+The different trigger events that are supported. The properties of this object is dependent on the [TriggerEventProps.event](./samelogic-js.triggereventprops.event.md) property.
 
 <b>Signature:</b>
 
@@ -17,3 +17,11 @@ The different trigger events that are supported. The type is dependent on the [T
 export declare type TriggerEvents = ElementEventProps | PageEventProps;
 ```
 **References:** [ElementEventProps](./samelogic-js.elementeventprops.md)<!-- -->, [PageEventProps](./samelogic-js.pageeventprops.md)
+
+## Remarks
+
+When `event` is `ElementClick` or `ElementMouseOver`<!-- -->, the following properties are required:`{@link @samelogic/samelogic-js#ElementEventProps.cssSelector}`
+
+When `event` is `PageView`<!-- -->, the following properties are required:`{@link @samelogic/samelogic-js#PageEventProps.urlPattern}`
+
+See the references of each type for more details.

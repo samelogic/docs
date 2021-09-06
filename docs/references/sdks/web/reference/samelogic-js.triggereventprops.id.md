@@ -9,6 +9,8 @@ hide_title: true
 
 ## TriggerEventProps.id property
 
+The identifier of the trigger event for referencing event data published from the event.
+
 <b>Signature:</b>
 
 ```typescript

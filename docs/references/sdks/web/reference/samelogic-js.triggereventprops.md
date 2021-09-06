@@ -21,5 +21,5 @@ export interface TriggerEventProps
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [event](./samelogic-js.triggereventprops.event.md) | [TriggerEventType](./samelogic-js.triggereventtype.md) |  |
-|  [id?](./samelogic-js.triggereventprops.id.md) | string | <i>(Optional)</i> |
+|  [event](./samelogic-js.triggereventprops.event.md) | [TriggerEventType](./samelogic-js.triggereventtype.md) | The event that determines what the rest of properties of this object should be. |
+|  [id?](./samelogic-js.triggereventprops.id.md) | string | <i>(Optional)</i> The identifier of the trigger event for referencing event data published from the event. |

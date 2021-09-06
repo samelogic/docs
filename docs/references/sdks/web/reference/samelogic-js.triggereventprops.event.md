@@ -9,6 +9,8 @@ hide_title: true
 
 ## TriggerEventProps.event property
 
+The event that determines what the rest of properties of this object should be.
+
 <b>Signature:</b>
 
 ```typescript
