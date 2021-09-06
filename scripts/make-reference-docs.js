@@ -80,6 +80,17 @@ async function convertDocs(dir) {
         if (line.startsWith("|")) {
           line = line.replace(/\\\|/g, "&#124;");
         }
+
+        // api-documenter incorrectly renders html and markdown
+        // in the same line when it is using References.
+        // For eg. The code `export type MyType = Type1 | Type2;`
+        // will be rendered as <b>References: </b> [Type1](./type.md)<!-- -->, [Type2](./type2.md)
+        // This will throw a parse error.
+        // To fix this, we replace `<b>References:</b>` with `**References:**`
+        if (line.startsWith("<b>References:</b>")) {
+          line = line.replace("<b>References:</b>", "**References:**");
+        }
+
         if (!skip) {
           output.push(line);
         }

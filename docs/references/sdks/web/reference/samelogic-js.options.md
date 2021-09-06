@@ -9,7 +9,7 @@ hide_title: true
 
 ## Options interface
 
-The options to pass into module initialization
+The options to pass into [Samelogic](./samelogic-js.samelogic.md) initialization.
 
 <b>Signature:</b>
 
@@ -21,6 +21,5 @@ export interface Options
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [appId](./samelogic-js.options.appid.md) | string | The <code>ENVIRONMENT_ID</code> provided, which you have received for creating a project on the Samelogic platform. |
-|  [clientProject?](./samelogic-js.options.clientproject.md) | [ClientProject](./samelogic-js.clientproject.md) | <i>(Optional)</i> clientProject can be used to override the default project settings that are retrieved using the [Options.appId](./samelogic-js.options.appid.md)<!-- -->. The [Options.appId](./samelogic-js.options.appid.md) will be ignored and the clientProject will be used instead. |
-|  [env](./samelogic-js.options.env.md) | env |  |
+|  [appId](./samelogic-js.options.appid.md) | string | The <code>APP_ID</code> provided, which you have received for creating a project on the Samelogic platform. |
+|  [workflows](./samelogic-js.options.workflows.md) | [WorkflowConfig](./samelogic-js.workflowconfig.md)<!-- -->\[\] | The list of currently \*\*active\*\* workflows. Worklows must be published to be active. |

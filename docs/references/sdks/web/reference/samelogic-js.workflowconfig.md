@@ -9,6 +9,7 @@ hide_title: true
 
 ## WorkflowConfig interface
 
+This is the configuration of a workflow. Workflows are made up of steps and triggers. Triggers are events used to trigger the execution of steps.
 
 <b>Signature:</b>
 
@@ -16,10 +17,14 @@ hide_title: true
 export interface WorkflowConfig 
 ```
 
+## Remarks
+
+When the Samelogic SDK is initialized, the workflow configuration is loaded and executed immediately. This means that the trigger will be setup to listen for the configured events. When all of the event conditions are met, the workflow will execute the configured steps.
+
 ## Properties
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [name](./samelogic-js.workflowconfig.name.md) | string |  |
-|  [steps](./samelogic-js.workflowconfig.steps.md) | [StepConfig](./samelogic-js.stepconfig.md)<!-- -->\[\] |  |
-|  [trigger](./samelogic-js.workflowconfig.trigger.md) | [TriggerConfig](./samelogic-js.triggerconfig.md) |  |
+|  [name](./samelogic-js.workflowconfig.name.md) | string | The name given to the workflow. |
+|  [steps](./samelogic-js.workflowconfig.steps.md) | [StepConfig](./samelogic-js.stepconfig.md)<!-- -->\[\] | The configuration of all the steps to be executed when the trigger is fired. |
+|  [trigger?](./samelogic-js.workflowconfig.trigger.md) | [TriggerConfig](./samelogic-js.triggerconfig.md) | <i>(Optional)</i> The configuration of the trigger. |

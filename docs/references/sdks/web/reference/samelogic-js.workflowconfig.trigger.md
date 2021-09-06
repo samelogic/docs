@@ -9,8 +9,10 @@ hide_title: true
 
 ## WorkflowConfig.trigger property
 
+The configuration of the trigger.
+
 <b>Signature:</b>
 
 ```typescript
-trigger: TriggerConfig;
+trigger?: TriggerConfig;
 ```

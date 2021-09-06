@@ -9,6 +9,7 @@ hide_title: true
 
 ## TriggerConfig interface
 
+The configuration of a trigger. Triggers are made up of events. All events must be met before the trigger is fired. The order of the event is not taken into account.
 
 <b>Signature:</b>
 
@@ -20,4 +21,4 @@ export interface TriggerConfig
 
 |  Property | Type | Description |
 |  --- | --- | --- |
-|  [events](./samelogic-js.triggerconfig.events.md) | [TriggerEventConditions](./samelogic-js.triggereventconditions.md)<!-- -->\[\] |  |
+|  [events](./samelogic-js.triggerconfig.events.md) | [TriggerEvents](./samelogic-js.triggerevents.md)<!-- -->\[\] | The events that must be met before the trigger is fired. |

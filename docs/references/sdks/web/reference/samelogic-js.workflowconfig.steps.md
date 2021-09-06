@@ -9,6 +9,8 @@ hide_title: true
 
 ## WorkflowConfig.steps property
 
+The configuration of all the steps to be executed when the trigger is fired.
+
 <b>Signature:</b>
 
 ```typescript

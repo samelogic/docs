@@ -1,0 +1,102 @@
+---
+id: index
+title: Advanced Topics
+slug: /references/sdks/web/advanced
+---
+
+```mdx-code-block
+import { CodePen } from '/src/components/CodePen'
+```
+
+## Architecture
+
+The Samelogic SDK is separated into 2 systems:
+
+1. The Samelogic Client SDK - this is the main library that you interact with, it contains the `SamelogicClient`.
+2. The Samelogic Steps - these are workflow steps that are dynamically loaded after the SamelogicClient is initialized.
+
+## Self-hosted
+
+The Samelogic SDK allows you to utilize the power of the workflow execution without the Samelogic Platform, requiring no `APP_ID`. You can supply all the data it needs to execute workflows from your source, such as your API or hard-coded.
+
+By leaving off the `appId` and replacing it with the [`workflows`](/references/sdks/web/reference/samelogic-js.options.workflows) property.
+The SDK will run using the supplied workflows and will not need to communicate with Samelogic APIs.
+
+The shape of this config would look like the code below.
+
+```javascript
+Samelogic.init({
+  workflows: [{
+    name: 'my-workflow',
+    trigger: {...},
+    steps: [{...}]
+  }]
+});
+```
+
+:::info
+Self-hosted Samelogic will not be able to track and provide analytics and insights into your workflows and experiments.
+:::
+
+### Workflows
+
+Workflows represent a set of steps that needs to be taken when some event is triggered. For more detailed information, see [Workflows](/workflows).
+
+The Workflow schema consists of 2 main parts:
+
+- Trigger - An optional object containing a list of events that can constrain when the workflow is executed.
+- Steps - A list of asynchronous processes that are executed sequentially when the workflow is triggered.
+
+The shape of a workflow would look like the code below.
+
+```javascript
+{
+  name: 'my-workflow',
+  trigger: {...},
+  steps: [{...}]
+}
+```
+
+See the [`WorkflowConfig`](/references/sdks/web/reference/samelogic-js.WorkflowConfig) for more details on the schema.
+
+### Trigger
+
+Triggers are made up of events. All event conditions must be met for the workflow to be triggered. If this is not provided, the workflow is triggered immediatly when the SDK is initialized. For more detailed information, see [Triggers](/workflows/triggers).
+
+```javascript
+{
+  name: 'my-workflow',
+  trigger: {
+    events: [{
+      event: 'ElementClick',
+      cssSelector: '#my-btn'
+    },
+    {
+      event: 'PageView',
+      urlPattern: 'https://samelogic.com/docs/*'
+    }]
+  },
+}
+```
+
+The trigger above will start the workflow when the element with the id `my-btn` is clicked on any page of the `https://samelogic.com/docs` url.
+
+See the [`TriggerConfig`](/references/sdks/web/reference/samelogic-js.TriggerConfig) for more details on the schema.
+
+### Steps
+
+Steps are processes that are executed within your workflow. Steps are executed **asynchronously** and are long running. Steps exposes events that can be used to run subsequent steps.
+
+:::info
+You can build your own custom steps and host them whereever you want and refer to it by its url.
+:::
+
+### Demo
+
+Below is a demo of a project that is setup to accomplish the following:
+
+1. Attach a Beacon to an element.
+2. When the Beacon is clicked, it starts a Microsurvey step.
+3. When the Microsurvey is submitted, it sends the data to a Webhook step which does an HTTP POST.
+
+<CodePen id="BaZKeXQ" />

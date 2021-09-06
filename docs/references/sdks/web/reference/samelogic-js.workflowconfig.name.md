@@ -9,6 +9,8 @@ hide_title: true
 
 ## WorkflowConfig.name property
 
+The name given to the workflow.
+
 <b>Signature:</b>
 
 ```typescript

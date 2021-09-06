@@ -9,8 +9,10 @@ hide_title: true
 
 ## TriggerConfig.events property
 
+The events that must be met before the trigger is fired.
+
 <b>Signature:</b>
 
 ```typescript
-events: TriggerEventConditions[];
+events: TriggerEvents[];
 ```

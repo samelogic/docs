@@ -97,6 +97,16 @@ module.exports = {
       trackingID: "GTM-KVPQMPT",
     },
   },
+  plugins: ["@docusaurus/theme-live-codeblock"],
+  themeConfig: {
+    liveCodeBlock: {
+      /**
+       * The position of the live playground, above or under the editor
+       * Possible values: "top" | "bottom"
+       */
+      playgroundPosition: "bottom",
+    },
+  },
   presets: [
     [
       "@docusaurus/preset-classic",
