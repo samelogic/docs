@@ -1,0 +1,67 @@
+---
+id: microsurvey
+title: Microsurvey
+slug: /references/steps/microsurvey
+hide_title: true
+---
+
+# Mirosurvey
+Microsurveys are great for collecting qualitative and quantitative feedback about specific features from users.
+
+### Properties:
+- `anchorElCssSelector` -
+This is the element the microsurvey gets attached to.
+- `form` -
+Form used to describe the questions in the survey. Form properties include:
+  - `title`
+  - `type`
+  - `fields`
+  - `settings`
+  - `peopleResponded`
+
+#### Fields
+
+`Fields` Properties:
+Form fields can be one of two types: `Long Text` or  `Multiple Choice`. Field properties:
+- `ref`
+- `title` - The title that gets displayed for the fields
+- `type` - defines the step type. Values are `long_text` and `multiple_choice`
+- `properties` - Optional parameter defining the properties of the steps based on its type.
+
+
+#### Long Text Field:
+```json
+{
+    ref: "long_text_ref",
+    title: "Welcome to my microsurvey",
+    type: "long_text"
+}
+```
+
+#### Multiple Choice Field:
+```json
+{
+    ref: "multiple_choice_ref",
+    title: "Which would you drink on a hot day?",
+    type: "multiple_choice",
+    properties: {
+        description: "",
+        choices: [
+            {
+                ref: "",
+                label: "Lemonade"
+            },
+            {
+                ref: "",
+                label: "Mimosa"
+            }
+        ]
+    }
+}
+```
+
+#### Full Example:
+
+### Events:
+- `OnSubmit` - 
+Gets triggered when users submit the last question in the microsurvey.

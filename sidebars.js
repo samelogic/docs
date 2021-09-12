@@ -55,7 +55,8 @@ module.exports = {
         label: "Steps",
         collapsed: false,
         items: [
-          "references/steps/beacon"
+          "references/steps/beacon",
+          "references/steps/microsurvey"
         ]
       },
     ],
