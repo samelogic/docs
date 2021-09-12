@@ -50,6 +50,14 @@ module.exports = {
           },
         ],
       },
+      {
+        type: "category",
+        label: "Steps",
+        collapsed: false,
+        items: [
+          "references/steps/beacon"
+        ]
+      },
     ],
     "Release Notes": ["release_notes/releases"],
   },
