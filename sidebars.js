@@ -56,7 +56,8 @@ module.exports = {
         collapsed: false,
         items: [
           "references/steps/beacon",
-          "references/steps/microsurvey"
+          "references/steps/microsurvey",
+          "references/steps/webhook"
         ]
       },
     ],
