@@ -6,7 +6,7 @@ hide_title: true
 ---
 
 # Webhook
-Webhooks are used for sending http requests to endpoints. It's common to use them for sending data about completed events or prior actions.
+Webhooks are used for sending http requests to endpoints. It's common to use them for sending data about completed events or prior steps.
 
 
 ### Properties:
@@ -33,20 +33,41 @@ HTTP response status.
 Reason for failure.
 
 
-### Example
-`{{microsurvey.OnSubmit.data}}` is used to pass data from a previous microsurvey step to the body property.
+### Examples
+
+#### Basic Usage
+```json
+{
+    name: 'request',
+    uses: "https://unpkg.com/@samelogic-steps/webhooks@0.9.1/dist/runner.js",
+    props: {
+        url: "https://www.myendpoint.com/uploadhere",
+        method: 'post',
+        body: 'Hello World!',
+    }
+}
 ```
+
+
+#### Passing Data From Steps
+In this example, the results from a `microsurvey` step is being piped to an http endpoint once the microsurvey has been completed.
+
+```json
 {
     name: 'request',
     needs: {
         name: 'microsurvey',
         event: 'OnSubmit',
     },
-    uses: 'https://unpkg.com/@samelogic-steps/webhooks@0.9.1/dist/runner.js',
+    uses: "https://unpkg.com/@samelogic-steps/webhooks@0.9.1/dist/runner.js",
     props: {
-        url: "https://myendpoint.com/uploadhere",
+        url: "https://www.myendpoint.com/uploadhere",
         method: 'post',
         body: '{{microsurvey.OnSubmit.data}}',
     }
 }
 ```
+
+:::info
+Note that the `{{microsurvey.OnSubmit.data}}` is used to pass data from a previous microsurvey step to the body property.
+:::

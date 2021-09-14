@@ -36,5 +36,24 @@ Sets the hover animation. Possible values:
   - `outline-out`.
 
 ### Events:
-- `OnClick` - 
-Gets triggered whenever the beacon is clicked. No data is passed on this event.
+#### `OnClick`
+- No data is passed from this event.
+
+### Examples
+
+#### Basic Usage
+```json
+{
+    "name": "beacon",
+    "uses": "https://unpkg.com/@samelogic-steps/beacons@0.9.3/dist/runner.js",
+    "props": {
+        "radius": 20,
+        "anchor": "center",
+        "anchorOffset": 0,
+        "background": "#00beff",
+        "pulse": true,
+        "hoverAnimation": "ripple-out",
+        "anchorElCssSelector": "#target-element"
+    }
+}
+```
