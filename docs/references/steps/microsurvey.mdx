@@ -1,0 +1,120 @@
+---
+id: microsurvey
+title: Microsurvey
+slug: /references/steps/microsurvey
+hide_title: true
+---
+
+# Mirosurvey
+Microsurveys are great for collecting qualitative and quantitative feedback about specific features from users.
+
+### Properties:
+- `anchorElCssSelector` -
+This is the element the microsurvey gets attached to.
+- `form` -
+Form used to describe the questions in the survey. Form properties include:
+  - `title`
+  - `type`
+  - `fields`
+  - `settings`
+  - `peopleResponded`
+
+#### Fields
+
+`Fields` Properties:
+Form fields can be one of two types: `Long Text` or  `Multiple Choice`. Field properties:
+- `ref`
+- `title` - The title that gets displayed for the fields
+- `type` - defines the step type. Values are `long_text` and `multiple_choice`
+- `properties` - Optional parameter defining the properties of the steps based on its type.
+
+
+#### Long Text Field:
+```json
+{
+    ref: "long_text_ref",
+    title: "Welcome to my microsurvey",
+    type: "long_text",
+    properties: {
+        description: "Some placeholder text here.."
+    }
+}
+```
+
+#### Multiple Choice Field:
+```js
+{
+    ref: "multiple_choice_ref",
+    title: "Which would you drink on a hot day?",
+    type: "multiple_choice",
+    properties: {
+        description: "",
+        choices: [
+            {
+                ref: "lemonade",
+                label: "Lemonade"
+            },
+            {
+                ref: "mimosa",
+                label: "Mimosa"
+            }
+        ]
+    }
+}
+```
+### Events:
+#### `OnSubmit`
+- `answers` - 
+dictionary containing the refs of the fields mapped to their answers. For example:
+```json
+{
+    "mulitple_choice": "lemonade",
+    "long_text": "It's refreshing"
+}
+```
+
+
+### Examples
+#### Basic Example
+```json
+{
+    "name": "microsurvey",
+    "uses": "https://cdn.jsdelivr.net/npm/@samelogic-steps/microsurveys@0.9.3/dist/runner.js",
+    "props": {
+        "anchorElCssSelector": "#target-element",
+        "form": {
+            "title": "We're running an experiment to see if this is worth building!",
+            "fields": [
+                {
+                    "ref": "multiple_choice",
+                    "title": "What did you expect this button to do?",
+                    "type": "multiple_choice",
+                    "defaultValue": "option1,
+                    "properties": {
+                        "description": "",
+                        "choices": [
+                            {
+                                "ref": "option1",
+                                "label": "Show me the pricing page"
+                            },
+                            {
+                                "ref": "option2,
+                                "label": "Allow me to pay right now"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "ref": "long_text",
+                    "title": "Why did you choose that option?",
+                    "type": "long_text",
+                    "defaultValue": "",
+                    "properties": {
+                        "description": "I chose this option because..."
+                    }
+                }
+            ]
+        }
+    }
+}
+```

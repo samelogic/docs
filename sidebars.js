@@ -54,6 +54,16 @@ module.exports = {
           },
         ],
       },
+      {
+        type: "category",
+        label: "Steps",
+        collapsed: false,
+        items: [
+          "references/steps/beacon",
+          "references/steps/microsurvey",
+          "references/steps/webhook"
+        ]
+      },
     ],
     "Release Notes": ["release_notes/releases"],
   },
