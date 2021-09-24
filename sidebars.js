@@ -7,6 +7,10 @@ module.exports = {
     Workflows: [
       "workflows/overview",
       {
+        Steps: ["workflows/steps/index", "workflows/steps/data_mapping"],
+      },
+
+      {
         Triggers: [
           "workflows/triggers/overview",
           "workflows/triggers/filters",
