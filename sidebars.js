@@ -20,12 +20,17 @@ module.exports = {
         ],
       },
     ],
-    Microsurveys: [
-      "microsurveys/overview",
+    Steps: [
+      "steps/index",
       {
-        Fields: [
-          "microsurveys/fields/long_text",
-          "microsurveys/fields/multiple_choice",
+        Microsurveys: [
+          "steps/microsurveys/overview",
+          {
+            Fields: [
+              "steps/microsurveys/fields/long_text",
+              "steps/microsurveys/fields/multiple_choice",
+            ],
+          },
         ],
       },
     ],
@@ -61,8 +66,8 @@ module.exports = {
         items: [
           "references/steps/beacon",
           "references/steps/microsurvey",
-          "references/steps/webhook"
-        ]
+          "references/steps/webhook",
+        ],
       },
     ],
     "Release Notes": ["release_notes/releases"],
