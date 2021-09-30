@@ -1,18 +1,20 @@
 ---
-id: microsurvey
-title: Microsurvey
-slug: /references/steps/microsurvey
+id: reference
+title: Reference
+slug: /steps/microsurvey/technical
 hide_title: true
 ---
 
-# Mirosurvey
+# Microsurvey Technical Reference
+
 Microsurveys are great for collecting qualitative and quantitative feedback about specific features from users.
 
 ### Properties:
+
 - `anchorElCssSelector` -
-This is the element the microsurvey gets attached to.
+  This is the element the microsurvey gets attached to.
 - `form` -
-Form used to describe the questions in the survey. Form properties include:
+  Form used to describe the questions in the survey. Form properties include:
   - `title`
   - `type`
   - `fields`
@@ -22,26 +24,28 @@ Form used to describe the questions in the survey. Form properties include:
 #### Fields
 
 `Fields` Properties:
-Form fields can be one of two types: `Long Text` or  `Multiple Choice`. Field properties:
+Form fields can be one of two types: `Long Text` or `Multiple Choice`. Field properties:
+
 - `ref`
 - `title` - The title that gets displayed for the fields
 - `type` - defines the step type. Values are `long_text` and `multiple_choice`
 - `properties` - Optional parameter defining the properties of the steps based on its type.
 
-
 #### Long Text Field:
+
 ```json
 {
-    ref: "long_text_ref",
-    title: "Welcome to my microsurvey",
-    type: "long_text",
-    properties: {
-        description: "Some placeholder text here.."
-    }
+  "ref": "long_text_ref",
+  "title": "Welcome to my microsurvey",
+  "type": "long_text",
+  "properties": {
+    "description": "Some placeholder text here.."
+  }
 }
 ```
 
 #### Multiple Choice Field:
+
 ```js
 {
     ref: "multiple_choice_ref",
@@ -62,20 +66,25 @@ Form fields can be one of two types: `Long Text` or  `Multiple Choice`. Field pr
     }
 }
 ```
+
 ### Events:
+
 #### `OnSubmit`
-- `answers` - 
-dictionary containing the refs of the fields mapped to their answers. For example:
+
+- `answers` -
+  dictionary containing the refs of the fields mapped to their answers. For example:
+
 ```json
 {
-    "mulitple_choice": "lemonade",
-    "long_text": "It's refreshing"
+  "mulitple_choice": "lemonade",
+  "long_text": "It's refreshing"
 }
 ```
 
-
 ### Examples
+
 #### Basic Example
+
 ```json
 {
     "name": "microsurvey",
