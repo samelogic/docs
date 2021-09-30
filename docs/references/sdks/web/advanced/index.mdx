@@ -85,14 +85,14 @@ See the [`TriggerConfig`](/references/sdks/web/reference/samelogic-js.TriggerCon
 
 ### Steps
 
-Steps are processes that are executed within your workflow. For more detailed information, see [Steps](/workflows/steps).
+Steps are processes that are executed within your workflow. For more detailed information, see [Steps](/steps).
 
 Steps contain four main pieces of information:
 
 1. `name` - this can be used by dependent steps to determine dependency or used in data mapping.
 2. `needs` - this property determines what step it depends on. It uses a combination of `name` and the name of the `event` that the step exposes.
 3. `uses` - this can be the official name and version of the step or a url to a custom step.
-4. `props` - this is the input of the step. Data can be passed in directly, or mapping information can be passed in. See the [Data Mapping](/workflows/steps/data_mapping) for more details.
+4. `props` - this is the input of the step. Data can be passed in directly, or mapping information can be passed in. See the [Data Mapping](/workflows/data_mapping) for more details.
 
 Please refer to the documentation for each step to see what the schema of the `props` are like and what events are exposed.
 
