@@ -3,13 +3,8 @@ module.exports = {
     Introduction: ["overview/getting-started"],
     Tutorials: ["tutorials/getting-started", "tutorials/churn/index"],
     "How To Guides": ["howto/getting-started"],
-
     Workflows: [
       "workflows/overview",
-      {
-        Steps: ["workflows/steps/index", "workflows/steps/data_mapping"],
-      },
-
       {
         Triggers: [
           "workflows/triggers/overview",
@@ -19,14 +14,23 @@ module.exports = {
           "workflows/triggers/hover_on",
         ],
       },
+      "workflows/data_mapping",
     ],
-    Microsurveys: [
-      "microsurveys/overview",
+    Steps: [
+      "steps/overview",
       {
-        Fields: [
-          "microsurveys/fields/long_text",
-          "microsurveys/fields/multiple_choice",
+        Beacons: ["steps/beacons/overview", "steps/beacons/reference"],
+        Microsurveys: [
+          "steps/microsurveys/overview",
+          {
+            Fields: [
+              "steps/microsurveys/fields/long_text",
+              "steps/microsurveys/fields/multiple_choice",
+            ],
+          },
+          "steps/microsurveys/reference",
         ],
+        Webhooks: ["steps/webhooks/overview", "steps/webhooks/reference"],
       },
     ],
     "Technical References": [
@@ -58,11 +62,7 @@ module.exports = {
         type: "category",
         label: "Steps",
         collapsed: false,
-        items: [
-          "references/steps/beacon",
-          "references/steps/microsurvey",
-          "references/steps/webhook"
-        ]
+        items: ["references/steps/beacon", "references/steps/webhook"],
       },
     ],
     "Release Notes": ["release_notes/releases"],

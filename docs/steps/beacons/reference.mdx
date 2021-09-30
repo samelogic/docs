@@ -1,0 +1,62 @@
+---
+id: reference
+title: Reference
+slug: /steps/beacons/technical
+hide_title: true
+---
+
+# Beacons Technical Reference
+
+### Properties:
+
+- `anchorElCssSelector` -
+  Css selector used to set the element the beacon gets attached to. If the selector matches multiple elements, the first one is chosen.
+- `radius` -
+  This controls the radius of the Beacon.
+- `anchor` -
+  Specifies the side or corner of the element you want the beacon to be positioned. Possible values are:
+  - `left`
+  - `right`
+  - `top`
+  - `bottom`
+  - `bottom-left`
+  - `bottom-right`
+  - `top-left`
+  - `top-right`
+- `anchorOffset` -
+  Sets the offset of the beacon from the anchor position to the center of the element. Anchor value is measured in pixels.
+- `background` -
+  Sets the background style of the Beacon. Any css `background` style works here.
+- `pulse` -
+  Enables or disable the Beacon's pulsing animation.
+- `hoverAnimation` -
+  Sets the hover animation. Possible values:
+  - `none`
+  - `ripple-out`
+  - `outline-out`.
+
+### Events:
+
+#### `OnClick`
+
+- No data is passed from this event.
+
+### Examples
+
+#### Basic Usage
+
+```json
+{
+  "name": "beacon",
+  "uses": "https://unpkg.com/@samelogic-steps/beacons@0.9.3/dist/runner.js",
+  "props": {
+    "radius": 20,
+    "anchor": "center",
+    "anchorOffset": 0,
+    "background": "#00beff",
+    "pulse": true,
+    "hoverAnimation": "ripple-out",
+    "anchorElCssSelector": "#target-element"
+  }
+}
+```

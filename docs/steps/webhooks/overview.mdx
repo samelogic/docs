@@ -1,0 +1,11 @@
+---
+id: overview
+title: Webhooks Overview
+slug: /steps/webhooks
+---
+
+Webhooks are used to send data to any URL. Data from events can be piped in, serialized, and sent in the form of an HTTP request.
+
+The main property that we care about is the `body`. This property is usually mapped to event data that triggered the step. The string is then serialized into a JSON object and sent in the `body` of the http request.
+
+We currently recommend using webhooks to send data to a zapier endpoint for starting out. This can be connected to a [Zapier Webhook](https://zapier.com/page/webhooks/).
