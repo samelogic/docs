@@ -29,6 +29,7 @@ module.exports = {
           },
           "steps/microsurveys/reference",
         ],
+        Webhooks: ["steps/webhooks/overview", "steps/webhooks/reference"],
       },
     ],
     "Technical References": [
