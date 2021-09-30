@@ -14,7 +14,6 @@ module.exports = {
           "workflows/triggers/hover_on",
         ],
       },
-      "workflows/steps",
       "workflows/data_mapping",
     ],
     Steps: [
