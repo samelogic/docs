@@ -19,6 +19,7 @@ module.exports = {
     Steps: [
       "steps/overview",
       {
+        Beacons: ["steps/beacons/overview", "steps/beacons/reference"],
         Microsurveys: [
           "steps/microsurveys/overview",
           {
