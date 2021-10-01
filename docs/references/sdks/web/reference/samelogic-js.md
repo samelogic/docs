@@ -27,7 +27,6 @@ The main entry point to samelogic.js is the [Samelogic](./samelogic-js.samelogic
 |  [PageEventProps](./samelogic-js.pageeventprops.md) | The shape of the payload for the PageView event. |
 |  [StepConfig](./samelogic-js.stepconfig.md) |  |
 |  [StepNeeds](./samelogic-js.stepneeds.md) |  |
-|  [TriggerConfig](./samelogic-js.triggerconfig.md) | The configuration of a trigger. Triggers are made up of events. All events must be met before the trigger is fired. The order of the event is not taken into account. |
 |  [TriggerEventProps](./samelogic-js.triggereventprops.md) | The properties of an event. |
 |  [WorkflowConfig](./samelogic-js.workflowconfig.md) | This is the configuration of a workflow. Workflows are made up of steps and triggers. Triggers are events used to trigger the execution of steps. |
 
@@ -35,5 +34,6 @@ The main entry point to samelogic.js is the [Samelogic](./samelogic-js.samelogic
 
 |  Type Alias | Description |
 |  --- | --- |
+|  [TriggerConfig](./samelogic-js.triggerconfig.md) | The configuration of a trigger. |
 |  [TriggerEvents](./samelogic-js.triggerevents.md) | The different trigger events that are supported. The properties of this object is dependent on the [TriggerEventProps.event](./samelogic-js.triggereventprops.event.md) property. |
 |  [TriggerEventType](./samelogic-js.triggereventtype.md) | The type of event. This will determine what properties of [TriggerEvents](./samelogic-js.triggerevents.md) are required. |

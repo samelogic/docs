@@ -5,15 +5,7 @@ module.exports = {
     "How To Guides": ["howto/getting-started"],
     Workflows: [
       "workflows/overview",
-      {
-        Triggers: [
-          "workflows/triggers/overview",
-          "workflows/triggers/filters",
-          "workflows/triggers/page_view",
-          "workflows/triggers/click_on",
-          "workflows/triggers/hover_on",
-        ],
-      },
+      "workflows/triggers",
       "workflows/data_mapping",
     ],
     Steps: [
