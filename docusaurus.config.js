@@ -10,7 +10,6 @@ module.exports = {
   organizationName: "Samelogic, Inc.", // Usually your GitHub org/user name.
   projectName: "Samelogic", // Usually your repo name.
   plugins: [
-    "@docusaurus/plugin-google-gtag",
     "@docusaurus/theme-live-codeblock",
     "@docusaurus/plugin-ideal-image",
   ],
