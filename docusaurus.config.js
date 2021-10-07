@@ -40,19 +40,22 @@ module.exports = {
       },
       items: [
         {
-          href: "https://www.samelogic.com/docs/tutorials",
+          type: "doc",
+          position: "left",
+          docId: "tutorials/getting-started",
           label: "Tutorials",
-          position: "left",
         },
         {
-          href: "https://www.samelogic.com/docs/howto",
+          type: "doc",
+          position: "left",
+          docId: "howto/getting-started",
           label: "How To Guides",
-          position: "left",
         },
         {
-          href: "https://www.samelogic.com/docs/release-notes",
-          label: "Release Notes",
+          type: "doc",
           position: "left",
+          docId: "release_notes/releases",
+          label: "Release Notes",
         },
         {
           href: "https://www.samelogic.com",
