@@ -9,7 +9,29 @@ module.exports = {
   favicon: "img/favicon.png",
   organizationName: "Samelogic, Inc.", // Usually your GitHub org/user name.
   projectName: "Samelogic", // Usually your repo name.
+  plugins: [
+    "@docusaurus/theme-live-codeblock",
+    [
+      "@docusaurus/plugin-ideal-image",
+      {
+        quality: 70,
+        max: 1030, // max resized image's size.
+        min: 640, // min resized image's size. if original is lower, use that size.
+        steps: 2, // the max number of images generated between min and max (inclusive)
+      },
+    ],
+  ],
   themeConfig: {
+    gtag: {
+      trackingID: "GTM-KVPQMPT",
+    },
+    liveCodeBlock: {
+      /**
+       * The position of the live playground, above or under the editor
+       * Possible values: "top" | "bottom"
+       */
+      playgroundPosition: "bottom",
+    },
     navbar: {
       title: "",
       logo: {
@@ -92,19 +114,6 @@ module.exports = {
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Samelogic, Inc.`,
-    },
-    gtag: {
-      trackingID: "GTM-KVPQMPT",
-    },
-  },
-  plugins: ["@docusaurus/theme-live-codeblock"],
-  themeConfig: {
-    liveCodeBlock: {
-      /**
-       * The position of the live playground, above or under the editor
-       * Possible values: "top" | "bottom"
-       */
-      playgroundPosition: "bottom",
     },
   },
   presets: [

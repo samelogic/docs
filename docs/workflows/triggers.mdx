@@ -1,0 +1,51 @@
+---
+id: triggers
+title: Workflow Triggers
+sidebar_label: Triggers
+slug: /workflows/triggers
+---
+
+A trigger is a specific activity that starts a workflow—for example, a user interaction within the application, such as clicking or hovering a button. A workflow will begin automatically when no trigger is specified.
+
+You can combine triggers; all trigger conditions must be met for the workflow to execute. You can arrange triggers in a sequence that represents complex user flows that might need to happen.
+
+We currently support the following triggers:
+
+- Element Hover - When the user mouse over a specified element.
+- Element Click - When the user clicks a specified element.
+- Page View - When the user visits a specified page URL.
+
+## Element Interactions
+
+There are a few triggers available to start a workflow when the user is interacting with elements in your product. Setting up a trigger on an element requires some understanding of [CSS Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors).
+
+An example of a cssSelector is using the element ID such as `#my-element-id`, where `my-element-id` is the element's ID.
+
+The available triggers for elements are:
+
+1. `ElementClick`
+2. `ElementMouseOver`
+
+## Page Interactions
+
+Triggers can be further constrained by the page URL pattern. Page View triggers will only allow a Workflow to be triggered if there is a match of the URL pattern, which can include wildcards.
+
+The page trigger is known as `PageView`.
+
+Example matches:
+
+URL Pattern: `https://samelogic.com/*\/docs`
+
+Matches:
+
+- :white_check_mark: - `https://samelogic.com/myproduct/docs`
+- :white_check_mark: - `https://samelogic.com/hello/docs?param=123`
+- :x: - `https://samelogic.com/hello`
+
+URL Pattern: `https://*.samelogic.com/`
+
+Matches:
+
+- :white_check_mark: - `https://app.samelogic.com/`
+- :white_check_mark: - `https://app.samelogic.com/hello/docs?param=123`
+- :x: - `https://should-not-run.samelogic.com/hello`

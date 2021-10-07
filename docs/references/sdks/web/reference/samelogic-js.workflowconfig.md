@@ -27,4 +27,4 @@ When the Samelogic SDK is initialized, the workflow configuration is loaded and 
 |  --- | --- | --- |
 |  [name](./samelogic-js.workflowconfig.name.md) | string | The name given to the workflow. |
 |  [steps](./samelogic-js.workflowconfig.steps.md) | [StepConfig](./samelogic-js.stepconfig.md)<!-- -->\[\] | The configuration of all the steps to be executed when the trigger is fired. |
-|  [trigger?](./samelogic-js.workflowconfig.trigger.md) | [TriggerConfig](./samelogic-js.triggerconfig.md) | <i>(Optional)</i> The configuration of the trigger. |
+|  [triggers?](./samelogic-js.workflowconfig.triggers.md) | [TriggerConfig](./samelogic-js.triggerconfig.md)<!-- -->\[\] | <i>(Optional)</i> A list of events or conditions that needs to be met to trigger the execution of the steps. If this is not specified, the trigger will be executed immediately. The order of the trigger is not taken into account. |
