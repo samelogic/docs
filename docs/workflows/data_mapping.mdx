@@ -5,7 +5,7 @@ sidebar_label: Data Mapping
 slug: /workflows/data_mapping
 ---
 
-Steps can be configured by setting their property values. Property values can be configured to map data from previous step events or by setting the values directly.
+You can configure steps by setting their property values. You can configure the property values to map data from previous step events or set the values directly.
 
 All steps will have access to a context containing a list of all the steps, their events, and the event data. This behavior allows you to pass data around, transform, make decisions, etc.
 
@@ -37,11 +37,11 @@ This event data has the following schema:
 }
 ```
 
-For the sake of showing how the Workflow builds the context, we will use 2 `ClickCounter` sequentially that will sent that data to a Webhook step.
+For the sake of showing how the Workflow builds the context, we will use 2 `ClickCounter` sequentially that will send that data to a Webhook step.
 
 ### Single Execution
 
-The following shows a data flow with the shape of the data being passed to each step when their events are fired:
+The following shows a data flow of the workflow execution. It shows the shape of the data being passed to each step when the events are fired:
 
 ![Dataflow sequential](./images/data-mapping-execution-sequential.png)
 
@@ -76,7 +76,7 @@ Take note of the schema:
 }
 ```
 
-The new event and its data was added to the context. So the webhook step now has access to both event data.
+The Workflow added the new event and its data to the context. So the webhook step now has access to both event data.
 
 ### Multiple Executions
 
@@ -84,14 +84,14 @@ The following shows a data flow where the event of a step **ClickerA** is fired 
 
 ![Dataflow multiple](./images/data-mapping-execution-multiple.png)
 
-This dataflow tells us that **ClickerA** then **ClickerB** was clicked. This was repeated two times.
+This data flow tells us that **ClickerA** then **ClickerB** was clicked. The user repeated this two times.
 
 Here we can see that the first try, the context that went to the webhook had `ClickerA.OnClick.Counter: 1`.
 On the second set of clicks, the context for **ClickerA** has changed to `ClickerA.OnClick.Counter: 2` but **ClickerB** hasn't changed. This is because all executions of other steps are disposed of when the event is fired twice.
 
-**ClickerA** was never disposed of, therefore the state changed and the context was updated.
+**ClickerA** was never disposed of. Therefore the state changed, and the context was updated.
 **ClickerB** was disposed of when **ClickerA** was clicked, so the second pass was a brand new step, which is why the counter value is still **1**.
 
 :::caution
-When an event is fired multiple times, all previously executed steps will be disposed of in favor of executing new steps.
+When an event is fired multiple times, the Workflow will dispose of all previously executed steps to run new steps.
 :::
