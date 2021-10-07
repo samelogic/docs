@@ -15,8 +15,8 @@ module.exports = {
       "@docusaurus/plugin-ideal-image",
       {
         quality: 70,
-        max: 1030, // max resized image's size.
-        min: 640, // min resized image's size. if original is lower, use that size.
+        max: 640, // max resized image's size.
+        min: 400, // min resized image's size. if original is lower, use that size.
         steps: 2, // the max number of images generated between min and max (inclusive)
       },
     ],
@@ -40,19 +40,22 @@ module.exports = {
       },
       items: [
         {
-          href: "https://www.samelogic.com/docs/tutorials",
+          type: "doc",
+          position: "left",
+          docId: "tutorials/getting-started",
           label: "Tutorials",
-          position: "left",
         },
         {
-          href: "https://www.samelogic.com/docs/howto",
+          type: "doc",
+          position: "left",
+          docId: "howto/getting-started",
           label: "How To Guides",
-          position: "left",
         },
         {
-          href: "https://www.samelogic.com/docs/release-notes",
-          label: "Release Notes",
+          type: "doc",
           position: "left",
+          docId: "release_notes/releases",
+          label: "Release Notes",
         },
         {
           href: "https://www.samelogic.com",
