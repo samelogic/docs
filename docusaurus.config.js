@@ -48,7 +48,7 @@ module.exports = {
         {
           type: "doc",
           position: "left",
-          docId: "howto/getting-started",
+          docId: "howto/how-to",
           label: "How To Guides",
         },
         {
