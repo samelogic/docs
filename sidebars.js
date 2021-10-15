@@ -1,11 +1,8 @@
 module.exports = {
   someSidebar: {
-    Introduction: ["introduction/getting-started"],
+    Introduction: ["introduction/getting-started", "introduction/integrations"],
     Tutorials: ["tutorials/getting-started", "tutorials/churn/index"],
-    "How To Guides": [
-      "howto/how-to",
-      "howto/how-to-install/how-to-install-microsurvey-and-beacon",
-    ],
+    "How To Guides": ["howto/how-to"],
     Workflows: [
       "workflows/overview",
       "workflows/triggers",
